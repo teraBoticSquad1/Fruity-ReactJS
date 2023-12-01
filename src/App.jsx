@@ -1,11 +1,17 @@
 import './App.css';
+import Home from './Pages/Home/Home';
+import Nav from "./Pages/Others/Nav/Nav"
 
 function App() {
   return (
-    <div className="App">
-
-    <p>This is Fruity Project </p>
+    <>
+    <div>
+      <Nav></Nav>
+      <Home></Home>
+      
     </div>
+    </>
+    
   );
 }
 
