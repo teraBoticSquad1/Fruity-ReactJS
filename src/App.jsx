@@ -5,7 +5,7 @@ import Nav from "./Pages/Others/Nav/Nav"
 function App() {
   return (
     <>
-    <div>
+    <div className=''>
       <Nav></Nav>
       <Home></Home>
       
