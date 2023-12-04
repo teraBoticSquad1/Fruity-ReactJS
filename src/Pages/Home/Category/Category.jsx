@@ -13,78 +13,78 @@ const Category = () => {
             <div>
                 <div>
                     <div>
-                        <h1 className="text-center font-bold text-xl">Top Catagories</h1>
+                        <h1 className="text-center font-bold text-3xl">Top Catagories</h1>
                         <p className="text-center">A highly efficient slip-ring scanner for today's diagnostic requirements.</p>
                     </div>
                 </div>
             </div>
-            <div className="flex flex-row flex-wrap gap-4 mx-8 justify-center md:justify-center text-center">
-                <div className="border-solid border-2 border-black p-10 m-10">
+            <div className="flex flex-row flex-wrap mx-28 justify-center md:justify-center text-center">
+                <div className="border-solid border border-neutral-500 group hover:bg-orange-100 p-8 m-8">
                     <div>
                         <div>
                             <a href="shop.html">
-                                <img className='w-40' src={all}/>
+                                <img className='w-40' src={all} alt=''/>
                                 
                             </a>
                         </div>
                         <div>
-                            <h5 className="font-bold hover:text-orange-600"><a href="shop.html">Browse all</a></h5>
+                            <h5 className="font-bold group-hover:text-orange-600"><a href="shop.html">Browse all</a></h5>
                             <h6>(27 items)</h6>
                         </div>
                     </div>
                 </div>
-                <div className="border-solid border-2 border-gray-700 p-10 m-10">
+                <div className="border-solid border border-neutral-500 group hover:bg-orange-100 p-8 m-8">
                     <div>
                         <div>
                             <a href="shop.html">
-                                <img className='w-40 h-40' src={img0}/>
+                                <img className='w-40 h-40 sm:h-full mb-8' src={img0} alt=''/>
                                 
                             </a>
                         </div>
                         <div>
-                            <h5 className="font-bold hover:text-orange-600"><a href="shop.html">Simple fleshy fruit</a></h5>
+                            <h5 className="font-bold group-hover:text-orange-600"><a href="shop.html">Simple fleshy fruit</a></h5>
                             <h6>(8 items)</h6>
                         </div>
                     </div>
                 </div>
-                <div className="border-solid border-2 border-black p-10 m-10">
+                <div className="border-solid border border-neutral-500 group hover:bg-orange-100 p-8 m-8">
                     <div>
                         <div>
                             <a href="shop.html">
-                                <img className='w-40 h-40' src={img01}/>
+                                <img className='w-40 h-40 sm:full' src={img01} alt=''/>
                                 
                             </a>
                         </div>
                         <div>
-                            <h5 className="font-bold hover:text-orange-600"><a href="shop.html">Addregate Fruit</a></h5>
+                            <h5 className="font-bold group-hover:text-orange-600"><a href="shop.html">Addregate Fruit</a></h5>
                             <h6>(5 items)</h6>
                         </div>
                     </div>
                 </div>
-                <div className="border-solid border-2 border-black p-10 m-10">
+                <div className="border-solid border border-neutral-500 group hover:bg-orange-100 p-8 m-8">
                     <div>
                         <div>
                             <a href="shop.html">
-                                <img className='w-40' src={img02}/>
+                                <img className='w-40' src={img02} alt=''/>
                                 
                             </a>
                         </div>
                         <div>
-                            <h5 className="font-bold hover:text-orange-600"><a href="shop.html">Multiple Fruit</a></h5>
+                            <h5 className="font-bold group-hover:text-orange-600"><a href="shop.html">Multiple Fruit</a></h5>
                             <h6>(4 items)</h6>
                         </div>
                     </div>
                 </div>               
-                <div className="border-solid border-2 border-black p-10 m-10">
+                <div className="border-solid border border-neutral-500 group hover:bg-orange-100 p-8 m-8">
                     <div>
                         <div>
                             <a  className="font-bold hover:text-orange-600"href="shop.html">
-                                <img className='w-40' src={img03}/>
+                                <img className='w-40' src={img03} alt=''/>
                                 
                             </a>
                         </div>
                         <div>
-                            <h5 className="font-bold hover:text-orange-600"><a href="shop.html">Accessory Fruit	</a></h5>
+                            <h5 className="font-bold group-hover:text-orange-600"><a href="shop.html">Accessory Fruit	</a></h5>
                             <h6>(10 items)</h6>
                         </div>
                     </div>
