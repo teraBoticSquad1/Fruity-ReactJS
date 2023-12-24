@@ -3,6 +3,8 @@ import Hero from './Hero/Hero';
 import Banner from './Banner/Banner';
 import Category from './Category/Category';
 import HurryUp from './HurryUp/HurryUp';
+import Choose from './ChooseUs/Choose';
+import Review from './Client/Review';
 
 const Home = () => {
     return (
@@ -11,6 +13,8 @@ const Home = () => {
             <Banner></Banner>
             <Category></Category>
             <HurryUp></HurryUp>
+            <Choose></Choose>
+            <Review></Review>
             
         </div>
     );
