@@ -5,6 +5,8 @@ import Category from './Category/Category';
 import HurryUp from './HurryUp/HurryUp';
 import Choose from './ChooseUs/Choose';
 import Review from './Client/Review';
+import AnyQuestion from './Q&A/AnyQuestion';
+import Blog from './Blog/Blog';
 
 const Home = () => {
     return (
@@ -15,6 +17,8 @@ const Home = () => {
             <HurryUp></HurryUp>
             <Choose></Choose>
             <Review></Review>
+            <AnyQuestion></AnyQuestion>
+            <Blog></Blog>
             
         </div>
     );

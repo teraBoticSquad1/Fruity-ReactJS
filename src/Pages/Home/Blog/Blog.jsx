@@ -8,7 +8,7 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
-const Review = () => {
+const Blog = () => {
     const reviews = [
         {
             id: 1,
@@ -47,11 +47,10 @@ const Review = () => {
         },
         // Add more testimonials as needed
     ];
-
     return (
         <div className='text-center my-10'>
-            <h4>Testimonial</h4>
-            <h2>Client Feedbacks</h2>
+            <h4>Blogs</h4>
+            <h2>Leatest Blogs</h2>
             <Swiper
                 slidesPerView={2}
                 spaceBetween={30}
@@ -66,14 +65,13 @@ const Review = () => {
             >
                 {reviews.map((Review) => (
                     <SwiperSlide key={Review.id} className='mx-10 my-10'>
-                        <div className="bg-white p-6 rounded-md shadow-md flex flex-col md:flex-row items-center">
+                        <div className="bg-white p-6 rounded-md shadow-md flex flex-col md:flex-row lg:flex-row items-center">
                             <div>
                                 <img className='w-48 md:w-96 lg:w-96' src={Review.image} alt="" />
                             </div>
                             <div className='text-left m-6'>
-                                <p className="text-gray-800">{Review.content}</p>
                                 <h4 className="text-gray-600 mt-4 font-bold"> {Review.name}</h4>
-                                <h5 className="text-gray-600 mt-4 font-bold"> {Review.position}</h5>
+                                <p className="text-gray-800">{Review.content}</p>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -84,5 +82,4 @@ const Review = () => {
     );
 };
 
-export default Review;
-
+export default Blog;
