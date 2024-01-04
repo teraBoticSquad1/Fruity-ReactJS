@@ -7,6 +7,7 @@ import Choose from './ChooseUs/Choose';
 import Review from './Client/Review';
 import AnyQuestion from './Q&A/AnyQuestion';
 import Blog from './Blog/Blog';
+import Footer from '../Others/Footer/Footer';
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <Review></Review>
             <AnyQuestion></AnyQuestion>
             <Blog></Blog>
+            <Footer></Footer>
             
         </div>
     );

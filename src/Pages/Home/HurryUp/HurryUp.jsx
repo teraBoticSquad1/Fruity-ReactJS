@@ -3,7 +3,7 @@ import "./HurryUp.css";
 import hurry from '../../../Assets/hurry.png'
 import food from '../../../Assets/fruits.png'
 
-const COUNTDOWN_TARGET = new Date("2023-12-31T23:59:59");
+const COUNTDOWN_TARGET = new Date("2024-03-10T23:59:59");
 
 const getTimeLeft = () => {
     const totalTimeLeft = COUNTDOWN_TARGET - new Date();
@@ -28,7 +28,7 @@ const HurryUp = () => {
     }, []);
 
     return (
-        <div className='countdown my-20 bg-orange-200 mx-auto'>
+        <div className='countdown my-10 bg-orange-200 mx-auto py-5'>
             <h4 className="text-center font-bold text-2xl">Hurry Up!!</h4>
             <h3 className="text-center font-bold text-4xl">50% Off in Per Order For Today</h3>
             <div className="flex items-center justify-between">

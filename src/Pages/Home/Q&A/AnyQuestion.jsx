@@ -1,11 +1,12 @@
 import React from 'react';
+import "./AnyQuestion.css";
 import hurry from '../../../Assets/hurry.png'
 import food from '../../../Assets/fruits.png'
 
 const AnyQuestion = () => {
     return (
         <div>
-            <div className="ltn__call-to-action-area ltn__call-to-action-4 bg-image pt-115 pb-120" data-bg="img/bg/6.jpg">
+            <div className="bg bg-orange-100 py-5" data-bg="">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
