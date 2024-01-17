@@ -23,7 +23,7 @@ const AnyQuestion = () => {
                     </div>
                     <div className="">
                         <div className="text-center mb-6">
-                            <h6 className="text-orange-600	 font-bold">//  any question you have  //</h6>
+                            <h6 className="text-orange-600 font-bold">//  any question you have  //</h6>
                             <h1 className="text-4xl font-bold">897-876-987-90</h1>
                         </div>
                         <a href="#_" className="px-5 py-2.5 relative rounded group overflow-hidden font-medium bg-orange-300 text-black inline-block mx-auto me-3">
