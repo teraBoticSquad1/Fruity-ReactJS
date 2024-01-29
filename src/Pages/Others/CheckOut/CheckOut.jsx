@@ -1,6 +1,12 @@
 import React from 'react';
+import Accordion from '../Accordian'
 
 const CheckOut = () => {
+    const accordionItems = [
+        { title: 'Check payments', content: 'Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.' },
+        { title: 'Cash on delivery', content: 'Pay with cash upon delivery.' },
+        { title: 'PayPal ', content: 'Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.' },
+      ];
     return (
         <section>
             <div className='w-full h-full pt pt-60 pb-28' style={{ backgroundColor: '#1E3133' }}>
@@ -201,7 +207,7 @@ const CheckOut = () => {
 
             <div className='container flex justify-around'>
 
-                <div id="accordion-collapse" data-accordion="collapse">
+                {/* <div id="accordion-collapse" data-accordion="collapse">
                     <h1 className='my-2'>Payment Method</h1>
 
                     <h2 id="accordion-collapse-heading-1">
@@ -252,7 +258,11 @@ const CheckOut = () => {
                         </div>
                     </div>
                     <button type="submit" class="py-3 px-5 my-5 text-sm font-medium text-center text-black rounded-lg bg-orange-300 bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+                </div> */}
+                <div className="bg-orange-100 min-h-scree flex items-center justify-center p-8">
+                    <Accordion items={accordionItems} />
                 </div>
+
 
                 <div class="relative overflow-x-auto">
                     <h1 className='my-2'>Cart Totals</h1>
