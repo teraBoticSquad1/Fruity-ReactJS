@@ -7,6 +7,8 @@ import CheckOut from './Pages/Others/CheckOut/CheckOut';
 import Contact from './Pages/Others/Contact/Contact';
 import Nav from "./Pages/Others/Nav/Nav"
 import NotFound from './Pages/Others/NotFound/NotFound';
+import Shop from './Pages/Others/Shop/Shop';
+import SingleProduct from './Pages/Others/Shop/SingleProduct';
 import Blogs from './Pages/Others/blog/Blogs';
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
       <SignUp></SignUp>
       <Cart></Cart>
       <Blogs></Blogs>
+      <Shop></Shop>
+      <SingleProduct></SingleProduct>
     </div>
     </>
     

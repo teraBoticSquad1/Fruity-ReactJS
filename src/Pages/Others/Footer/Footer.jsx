@@ -60,9 +60,9 @@ const Footer = () => {
                     <h1 className=" text-2xl font-semibold">Newsletter</h1>
                     <p>Subscribe to our weekly Newsletter and receive updates via email.</p>
                     <div className=''>
-                    <div class="relative">
-                        <input type="text" placeholder="Search" class="border rounded-md p-2 w-60" />
-                        <button class="absolute border-t-2 border-r-2 border-b-2 bg-lime-400 top-1 ">
+                    <div className="relative">
+                        <input type="text" placeholder="Search" className="border rounded-md p-2 w-60" />
+                        <button className="absolute border-t-2 border-r-2 border-b-2 bg-lime-400 top-1 ">
                         <IoIosSend />
                         </button>
                     </div>
