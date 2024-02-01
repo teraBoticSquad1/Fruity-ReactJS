@@ -5,11 +5,13 @@ import Home from './Pages/Home/Home';
 import Cart from './Pages/Others/Cart/Cart';
 import CheckOut from './Pages/Others/CheckOut/CheckOut';
 import Contact from './Pages/Others/Contact/Contact';
+import Footer from './Pages/Others/Footer/Footer';
 import Nav from "./Pages/Others/Nav/Nav"
 import NotFound from './Pages/Others/NotFound/NotFound';
 import Shop from './Pages/Others/Shop/Shop';
 import SingleProduct from './Pages/Others/Shop/SingleProduct';
 import Blogs from './Pages/Others/blog/Blogs';
+import SingleBlog from './Pages/Others/blog/SingleBlog';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
     <div className=''>
       <Nav></Nav>
       <Home></Home>
+      <Footer></Footer>
       <NotFound></NotFound>
       <Contact></Contact>
       <CheckOut></CheckOut>
@@ -26,6 +29,7 @@ function App() {
       <Blogs></Blogs>
       <Shop></Shop>
       <SingleProduct></SingleProduct>
+      <SingleBlog></SingleBlog>
     </div>
     </>
     
