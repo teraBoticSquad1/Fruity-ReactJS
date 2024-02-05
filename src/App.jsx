@@ -2,6 +2,7 @@ import './App.css';
 import SignIn from './Pages/Authentication/SignIn/SignIn';
 import SignUp from './Pages/Authentication/SignUp/SignUp';
 import Home from './Pages/Home/Home';
+import About from './Pages/Others/About/About';
 import Cart from './Pages/Others/Cart/Cart';
 import CheckOut from './Pages/Others/CheckOut/CheckOut';
 import Contact from './Pages/Others/Contact/Contact';
@@ -30,6 +31,7 @@ function App() {
       <Shop></Shop>
       <SingleProduct></SingleProduct>
       <SingleBlog></SingleBlog>
+      <About></About>
     </div>
     </>
     
