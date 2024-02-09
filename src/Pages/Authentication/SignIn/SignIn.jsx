@@ -1,20 +1,22 @@
 import React from 'react';
+import logo from '../../../Assets/logo.png'
 
 const SignIn = () => {
     return (
-        <section className="font-poppins py-7">
+        <section className="font-poppins my-10 py-7">
             <div className="max-w-6xl px-1 mx-auto lg:px-6 ">
                 <div className="flex flex-col items-center h-full md:flex-row">
                     <div className="flex items-center justify-center w-full h-screen px-1 lg:w-3/6 md:mx-auto md:w-3/5 lg:px-16 xl:px-12">
-                        <div className="z-10 w-full p-10 bg-white shadow-lg dark:bg-gray-900 h-100">
-                            <h2 className="mt-10 mb-4 text-xl font-bold leading-tight text-orange-800 md:text-3xl dark:text-gray-300 ">
+                        <div className="z-10 w-full p-10 bg-white shadow-lg h-100">
+                        <img className='w-40 mx-auto' src={logo} alt="" />
+                            <h2 className="mt-10 mb-4 text-center text-xl font-bold leading-tight text-orange-600 md:text-3xl ">
                                 Login to your account
                             </h2>
                             <form action="" className="mt-6">
                                 <div>
                                     <input
                                         type="email"
-                                        className="w-full px-4 py-4 mt-2 text-sm placeholder-orange-400 dark:text-gray-400 lg:text-base bg-orange-50 dark:placeholder-gray-400 dark:bg-gray-900 dark:border dark:border-gray-800"
+                                        className="w-full px-4 py-4 mt-2 text-sm placeholder-orange-400 dark:text-gray-400 lg:text-base bg-orange-50 dark:placeholder-gray-400 dark:border dark:border-gray-800"
                                         name=""
                                         placeholder="Enter your email"
                                     />
@@ -24,7 +26,7 @@ const SignIn = () => {
                                         <div className="relative flex items-center mt-2">
                                             <input
                                                 type="password"
-                                                className="w-full px-4 py-4 text-sm placeholder-orange-400 dark:text-gray-400 lg:text-base bg-orange-50 dark:placeholder-gray-400 dark:bg-gray-900 dark:border dark:border-gray-800 "
+                                                className="w-full px-4 py-4 text-sm placeholder-orange-400 dark:text-gray-400 lg:text-base bg-orange-50 dark:placeholder-gray-400 dark:border dark:border-gray-800 "
                                                 name=""
                                                 placeholder="Enter password"
                                             />
@@ -51,24 +53,19 @@ const SignIn = () => {
                                 </div>
 
                                 <button
-                                    className="w-full px-4 py-4 mt-6 font-semibold text-gray-800 bg-orange-500 dark:text-gray-800 hover:text-gray-700 hover:bg-orange-200 dark:hover:bg-orange-600 dark:hover:text-gray-800"
+                                    className="w-full rounded-lg mx-auto py-4 mt-6 font-semibold text-gray-800 bg-orange-500 dark:text-gray-800 hover:text-gray-700 hover:bg-orange-200 dark:hover:bg-orange-600 dark:hover:text-gray-800"
                                     type="submit"
                                 >
                                     LOGIN
                                 </button>
+
                                 <div className="mt-4 text-right">
-                                    <a
-                                        href="# "
-                                        className="text-sm font-normal text-orange-700 dark:hover:text-orange-400 dark:text-orange-300"
-                                    >
+                                    <a href="# " className="text-sm font-normal text-orange-700 dark:hover:text-orange-400">
                                         Forgot password?
                                     </a>
                                 </div>
-                                <a
-                                    href="# "
-                                    className="flex items-center justify-center py-4 my-4 border-2 border-orange-800 dark:border-gray-600 hover:bg-orange-200 dark:hover:bg-gray-800"
-                                >
-                                    <span className="inline-block mr-4 text-orange-800 dark:text-gray-400">
+                                <a href="# " className="flex items-center justify-center py-4 my-4 border-2 border-orange-600 hover:bg-orange-200 " >
+                                    <span className="inline-block mr-4 text-orange-600 ">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="16"
@@ -82,15 +79,14 @@ const SignIn = () => {
                                             />
                                         </svg>
                                     </span>
-                                    <span className="text-xs font-bold text-orange-800 uppercase lg:text-sm dark:text-gray-400">
+                                    <span className="text-xs font-bold text-orange-600 uppercase lg:text-sm ">
                                         Login with Facebook
                                     </span>
                                 </a>
-                                <a
-                                    href="# "
-                                    className="flex items-center justify-center py-4 my-4 border-2 border-orange-800 dark:border-gray-600 hover:bg-orange-200 dark:hover:bg-gray-800"
+                                <a href="# "
+                                    className="flex items-center justify-center py-4 my-4 border-2 border-orange-600 hover:bg-orange-200 "
                                 >
-                                    <span className="inline-block mr-4 text-orange-800 dark:text-gray-400">
+                                    <span className="inline-block mr-4 text-orange-600">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="16"
@@ -104,16 +100,14 @@ const SignIn = () => {
                                             />
                                         </svg>
                                     </span>
-                                    <span className="text-xs font-bold text-orange-800 uppercase lg:text-sm dark:text-gray-400">
+                                    <span className="text-xs font-bold text-orange-600 uppercase lg:text-sm ">
                                         Login with Google
                                     </span>
                                 </a>
                                 <p className="mt-5 text-sm text-gray-700 mb-7 dark:text-gray-400">
                                     Need an account?{' '}
-                                    <a
-                                        href="# "
-                                        className="font-medium text-orange-500 hover:text-orange-700 dark:text-orange-300 dark:hover:text-orange-400"
-                                    >
+                                    <a href="/signup"
+                                        className="font-medium text-orange-500 hover:text-orange-700 dark:text-orange-300 dark:hover:text-orange-400">
                                         Create an account
                                     </a>
                                 </p>

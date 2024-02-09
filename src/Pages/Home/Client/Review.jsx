@@ -54,7 +54,7 @@ const Review = () => {
             <h2>Client Feedbacks</h2>
             <Swiper
                 slidesPerView={2}
-                spaceBetween={30}
+                spaceBetween={5}
                 navigation={true}
                 loop={true}
                 autoplay={{
@@ -64,22 +64,22 @@ const Review = () => {
                 breakpoints={{
                     576: {
                         slidesPerView: 1,
-                        spaceBetween: 10,
+                        spaceBetween: 5,
                     },
                     768: {
                         slidesPerView: 1,
-                        spaceBetween: 20,
+                        spaceBetween: 5,
                     },
                     1024: {
                         slidesPerView: 2,
-                        spaceBetween: 20,
+                        spaceBetween: 5,
                     },
                 }}
                 modules={[Autoplay, Navigation, Pagination]}
                 className="mySwiper"
             >
                 {reviews.map((Review) => (
-                    <SwiperSlide key={Review.id} className=''>
+                    <SwiperSlide key={Review.id} className='mx-10 my-10'>
                         {/* <div className="bg-white rounded-md shadow-md flex flex-col md:flex-row sm:flex-row xm:flex-row items-center">
                             <div>
                                 <img className='w-48 md:w-96 lg:w-96' src={Review.image} alt="" />
@@ -95,8 +95,8 @@ const Review = () => {
                                 <img class="object-cover w-full h-full rounded-t-lg md:h-auto md:w-48 sm:w-28 md:rounded-none md:rounded-s-lg" src={Review.image} alt=""/>
                                     <div class="flex flex-col justify-between p-0 leading-normal text-start md:ml-5">
                                         <p class="mb-3 font-normal text-gray-700 ">{Review.content}</p>
-                                        <h4 class="text-lg font-bold tracking-tight text-gray-900"> {Review.name}</h4>
-                                        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900"> {Review.position}</h5>
+                                        <h4 class="text-md font-semibold tracking-tight text-gray-900"> {Review.name}</h4>
+                                        <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900"> {Review.position}</h5>
                                     </div>
                             </div>
 

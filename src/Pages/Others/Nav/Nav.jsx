@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="max-w-6xl px-4 mx-auto" data-open={open}>
         <div className="relative flex items-center justify-between py-4">
           <a href="/" className="text-3xl font-semibold leading-none dark:text-gray-400">
-            <img className='w w-40' src={logo} alt="" />
+            <img className='w-40' src={logo} alt="" />
           </a>
 
           <div className="lg:hidden">
@@ -24,16 +24,16 @@ const Navbar = () => {
           </div>
 
           <ul className="hidden lg:w-auto lg:space-x-12 lg:items-center lg:flex">
-            <li><a href="/" className="text-sm text-gray-700 hover:text-orange-700 dark:text-gray-400 dark:hover:text-orange-500">Home</a></li>
-            <li><a href="/about" className="text-sm text-gray-700 hover:text-orange-700 dark:text-gray-400 dark:hover:text-orange-500">About us</a></li>
-            <li><a href="/products" className="text-sm text-gray-700 hover:text-orange-700 dark:text-gray-400 dark:hover:text-orange-500">Shop</a></li>
-            <li><a href="/blogs" className="text-sm text-gray-700 hover:text-orange-700 dark:text-gray-400 dark:hover:text-orange-500">Blog </a></li>
-            <li><a href="/contact" className="text-sm text-gray-700 hover:text-orange-700 dark:text-gray-400 dark:hover:text-orange-500">Testimonials</a></li>
+            <li><a href="/" className="text-sm text-gray-700 hover:text-orange-700">Home</a></li>
+            <li><a href="/about" className="text-sm text-gray-700 hover:text-orange-700">About us</a></li>
+            <li><a href="/products" className="text-sm text-gray-700 hover:text-orange-700">Shop</a></li>
+            <li><a href="/blogs" className="text-sm text-gray-700 hover:text-orange-700">Blog </a></li>
+            <li><a href="/contact" className="text-sm text-gray-700 hover:text-orange-700">Testimonials</a></li>
           </ul>
 
           <div className="hidden lg:block">
-            <a href="/signIn" className="inline-block px-4 py-3 mr-2 text-xs font-semibold leading-none text-orange-600 border border-orange-200 rounded dark:hover:border-orange-300 dark:hover:text-orange-300 dark:text-gray-400 hover:text-orange-700 hover:border-orange-300">Log In</a>
-            <a href="/signOut" className="inline-block px-4 py-3 mr-2 text-xs font-semibold leading-none text-gray-100 bg-orange-600 border border-orange-200 rounded dark:hover:border-orange-400 dark:hover:bg-orange-400 dark:bg-orange-300 dark:text-gray-700 hover:bg-orange-700">Sign Up</a>
+            <a href="/signin" className="inline-block px-4 py-3 mr-2 text-xs font-semibold leading-none text-orange-600 border border-orange-200 rounded dark:hover:border-orange-300 dark:hover:text-orange-300 dark:text-gray-400 hover:text-orange-700 hover:border-orange-300">Log In</a>
+            <a href="/signup" className="inline-block px-4 py-3 mr-2 text-xs font-semibold leading-none text-gray-100 bg-orange-600 border border-orange-200 rounded dark:hover:border-orange-400 dark:hover:bg-orange-400 dark:bg-orange-300 dark:text-gray-700 hover:bg-orange-700">Sign Up</a>
           </div>
         </div>
 
@@ -58,8 +58,8 @@ const Navbar = () => {
             <li className="pb-3"><a href="/contact" className="text-sm text-gray-700 hover:text-orange-400 dark:text-gray-400">Testimonials</a></li>
           </ul>
           <div className="block mt-5 lg:hidden">
-            <a href="#/signIn" className="inline-block w-full px-4 py-3 mb-4 mr-2 text-xs font-semibold leading-none text-center text-orange-600 border border-orange-400 rounded dark:hover:text-orange-300 dark:text-gray-400 dark:border-gray-400 hover:text-orange-700 hover:border-orange-300">Log In</a>
-            <a href="/signOut" className="inline-block w-full px-4 py-3 mr-2 text-xs font-semibold leading-none text-center text-gray-100 bg-orange-600 rounded dark:hover:bg-orange-400 dark:bg-orange-300 dark:text-gray-700 hover:bg-orange-700">Sign Up</a>
+            <a href="/signin" className="inline-block w-full px-4 py-3 mb-4 mr-2 text-xs font-semibold leading-none text-center text-orange-600 border border-orange-400 rounded dark:hover:text-orange-300 dark:text-gray-400 dark:border-gray-400 hover:text-orange-700 hover:border-orange-300">Log In</a>
+            <a href="/signin" className="inline-block w-full px-4 py-3 mr-2 text-xs font-semibold leading-none text-center text-gray-100 bg-orange-600 rounded dark:hover:bg-orange-400 dark:bg-orange-300 dark:text-gray-700 hover:bg-orange-700">Sign Up</a>
           </div>
         </div>
       </div>
