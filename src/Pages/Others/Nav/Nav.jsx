@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '../../../Assets/logo.png'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -7,7 +8,9 @@ const Navbar = () => {
     <section className="shadow-lg font-poppins dar:bg-gray-800">
       <div className="max-w-6xl px-4 mx-auto" data-open={open}>
         <div className="relative flex items-center justify-between py-4">
-          <a href="/" className="text-3xl font-semibold leading-none dark:text-gray-400">Logo</a>
+          <a href="/" className="text-3xl font-semibold leading-none dark:text-gray-400">
+            <img className='w w-40' src={logo} alt="" />
+          </a>
 
           <div className="lg:hidden">
             <button
@@ -23,8 +26,8 @@ const Navbar = () => {
           <ul className="hidden lg:w-auto lg:space-x-12 lg:items-center lg:flex">
             <li><a href="/" className="text-sm text-gray-700 hover:text-orange-700 dark:text-gray-400 dark:hover:text-orange-500">Home</a></li>
             <li><a href="/about" className="text-sm text-gray-700 hover:text-orange-700 dark:text-gray-400 dark:hover:text-orange-500">About us</a></li>
-            <li><a href="/shop" className="text-sm text-gray-700 hover:text-orange-700 dark:text-gray-400 dark:hover:text-orange-500">Features</a></li>
-            <li><a href="/blog" className="text-sm text-gray-700 hover:text-orange-700 dark:text-gray-400 dark:hover:text-orange-500">Blog </a></li>
+            <li><a href="/products" className="text-sm text-gray-700 hover:text-orange-700 dark:text-gray-400 dark:hover:text-orange-500">Shop</a></li>
+            <li><a href="/blogs" className="text-sm text-gray-700 hover:text-orange-700 dark:text-gray-400 dark:hover:text-orange-500">Blog </a></li>
             <li><a href="/contact" className="text-sm text-gray-700 hover:text-orange-700 dark:text-gray-400 dark:hover:text-orange-500">Testimonials</a></li>
           </ul>
 
@@ -50,8 +53,8 @@ const Navbar = () => {
           <ul className="px-4 text-left mt-7">
             <li className="pb-3"><a href="/" className="text-sm text-gray-700 hover:text-orange-400 dark:text-gray-100">Home</a></li>
             <li className="pb-3"><a href="/about" className="text-sm text-gray-700 hover:text-orange-400 dark:text-gray-400">About us</a></li>
-            <li className="pb-3"><a href="/shop" className="text-sm text-gray-700 hover:text-orange-400 dark:text-gray-400">Features</a></li>
-            <li className="pb-3"><a href="/blog" className="text-sm text-gray-700 hover:text-orange-400 dark:text-gray-400">Blog </a></li>
+            <li className="pb-3"><a href="/products" className="text-sm text-gray-700 hover:text-orange-400 dark:text-gray-400">Features</a></li>
+            <li className="pb-3"><a href="/blogs" className="text-sm text-gray-700 hover:text-orange-400 dark:text-gray-400">Blog </a></li>
             <li className="pb-3"><a href="/contact" className="text-sm text-gray-700 hover:text-orange-400 dark:text-gray-400">Testimonials</a></li>
           </ul>
           <div className="block mt-5 lg:hidden">
