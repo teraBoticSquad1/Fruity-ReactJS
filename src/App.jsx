@@ -14,6 +14,7 @@ import Shop from './Pages/Others/Shop/Shop';
 import SingleProduct from './Pages/Others/Shop/SingleProduct';
 import Blogs from './Pages/Others/blog/Blogs';
 import SingleBlog from './Pages/Others/blog/SingleBlog';
+import Test1 from './Pages/Others/Test/Test1';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path='/cart' element={<Cart></Cart>}></Route>
           <Route path='/sp' element={<SingleProduct></SingleProduct>}></Route>
           <Route path='/sb' element={<SingleBlog></SingleBlog>}></Route>
+          <Route path='/test' element={<Test1></Test1>}></Route>
 
         </Routes>
         <Footer></Footer>
