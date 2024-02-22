@@ -4,9 +4,11 @@ const Shop = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('Product.json')
+        fetch('https://fruity-mongoose.vercel.app/api/v1/products')
             .then(res => res.json())
-            .then(data => setProducts(data));
+            .then(data =>
+            {console.log(data)}
+            );
     }, [])
     return (
         // <section className="py-20 bg-gray-50 font-poppins ">

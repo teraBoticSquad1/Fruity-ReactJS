@@ -48,11 +48,10 @@ const Blog = () => {
         // Add more testimonials as needed
     ];
     return (
-        <div className='text-center my-10'>
-            <h4>Blogs</h4>
-            <h2>Leatest Blogs</h2>
+        <div className='text-center my-10 mx-32'>
+            <h2 className='text-5xl font-bold'>Leatest Blogs</h2>
             <Swiper
-                slidesPerView={2}
+                slidesPerView={3}
                 spaceBetween={1}
                 navigation={true}
                 loop={true}
@@ -71,7 +70,7 @@ const Blog = () => {
                     },
                     1024: {
                         slidesPerView: 2,
-                        spaceBetween: 5,
+                        // spaceBetween: 5,
                     },
                 }}
                 modules={[Autoplay, Navigation, Pagination]}

@@ -1,7 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../../Assets/logo.png'
+import { useNavigate } from 'react-router';
 
 const SignIn = () => {
+    const [email, emailChange] = useState();
+    const [password, passwordChange] = useState();
+
+    const navigate = useNavigate();
+
+    const proceedLogin = (e) =>{
+        e.preventDefault();
+        e.preventDefault();
+        let data = { email, password };
+        console.log(data);
+        fetch('https://fruity-mongoose.vercel.app/api/v1/auth/login', {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data)
+        }).then((res) => {
+            console.log("Login Successfully");
+            navigate('/');
+        }).catch((err) => {
+            console.log("Error in Login " + err);
+        })
+    }
     return (
         <section className="font-poppins my-10 py-7">
             <div className="max-w-6xl px-1 mx-auto lg:px-6 ">
@@ -12,9 +34,9 @@ const SignIn = () => {
                             <h2 className="mt-10 mb-4 text-center text-xl font-bold leading-tight text-orange-600 md:text-3xl ">
                                 Login to your account
                             </h2>
-                            <form action="" className="mt-6">
+                            <form action="" onSubmit={proceedLogin} className="mt-6">
                                 <div>
-                                    <input
+                                    <input value={email} onChange={e => emailChange(e.target.value)}
                                         type="email"
                                         className="w-full px-4 py-4 mt-2 text-sm placeholder-orange-400 dark:text-gray-400 lg:text-base bg-orange-50 dark:placeholder-gray-400 dark:border dark:border-gray-800"
                                         name=""
@@ -24,7 +46,7 @@ const SignIn = () => {
                                 <div className="mt-5">
                                     <div>
                                         <div className="relative flex items-center mt-2">
-                                            <input
+                                            <input value={password} onChange={e => passwordChange(e.target.value)}
                                                 type="password"
                                                 className="w-full px-4 py-4 text-sm placeholder-orange-400 dark:text-gray-400 lg:text-base bg-orange-50 dark:placeholder-gray-400 dark:border dark:border-gray-800 "
                                                 name=""

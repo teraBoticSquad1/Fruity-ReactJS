@@ -50,8 +50,8 @@ const Review = () => {
 
     return (
         <div className='text-center my-10'>
-            <h4>Testimonial</h4>
-            <h2>Client Feedbacks</h2>
+            <h4 className='t text-orange-500 font-bold text-xl'>//Testimonial</h4>
+            <h2 className='text-5xl font-semibold'>Client Feedbacks</h2>
             <Swiper
                 slidesPerView={2}
                 spaceBetween={5}
@@ -80,16 +80,6 @@ const Review = () => {
             >
                 {reviews.map((Review) => (
                     <SwiperSlide key={Review.id} className='mx-10 my-10'>
-                        {/* <div className="bg-white rounded-md shadow-md flex flex-col md:flex-row sm:flex-row xm:flex-row items-center">
-                            <div>
-                                <img className='w-48 md:w-96 lg:w-96' src={Review.image} alt="" />
-                            </div>
-                            <div className='text-left m-6'>
-                                <p className="text-gray-800">{Review.content}</p>
-                                <h4 className="text-gray-600 mt-4 font-bold"> {Review.name}</h4>
-                                <h5 className="text-gray-600 mt-4 font-bold"> {Review.position}</h5>
-                            </div>
-                        </div> */}
                         <div>
                             <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl p-5 hover:bg-gray-100">
                                 <img class="object-cover w-full h-full rounded-t-lg md:h-auto md:w-48 sm:w-28 md:rounded-none md:rounded-s-lg" src={Review.image} alt=""/>

@@ -5,10 +5,10 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="shadow-lg font-poppins dar:bg-gray-800">
+    <section className="shadow-lg font-poppins sticky top-0 bg-white z-50">
       <div className="max-w-6xl px-4 mx-auto" data-open={open}>
         <div className="relative flex items-center justify-between py-4">
-          <a href="/" className="text-3xl font-semibold leading-none dark:text-gray-400">
+          <a href="/" className="text-3xl font-semibold leading-none">
             <img className='w-40' src={logo} alt="" />
           </a>
 
