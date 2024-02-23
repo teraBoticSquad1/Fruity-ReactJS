@@ -16,6 +16,8 @@ import Blogs from './Pages/Others/blog/Blogs';
 import SingleBlog from './Pages/Others/blog/SingleBlog';
 import Test1 from './Pages/Others/Test/Test1';
 import Dashboard from './Pages/Dashboard/Dashboard';
+import AddProduct from './Pages/Dashboard/Product/AddProduct';
+import AddReview from './Pages/Dashboard/Review/AddReview';
 
 function App() {
   return (
@@ -38,6 +40,29 @@ function App() {
           <Route path='/sb' element={<SingleBlog></SingleBlog>}></Route>
           <Route path='/test' element={<Test1></Test1>}></Route>
           <Route path='/Dash' element={<Dashboard></Dashboard>}></Route>
+          <Route path='/addItem' element={<AddProduct></AddProduct>}></Route>
+          <Route path='/addReview' element={<AddReview></AddReview>}></Route>
+
+
+          {/* <Route path="dashboard" element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
+          <Route index element={<MyProfile></MyProfile>}></Route>
+
+          <Route path='myorder' element={<MyOrder></MyOrder>}></Route>
+
+          <Route path='manageproduct' element={<RequireAdmin><ManageProducts></ManageProducts></RequireAdmin>}></Route>
+          <Route path='addproduct' element={<RequireAdmin><AddProduct></AddProduct></RequireAdmin>}></Route>
+
+          <Route path='manageorders' element={<RequireAdmin><ManageOrders></ManageOrders></RequireAdmin>}></Route>
+
+          <Route path='update' element={<UpdateProfile></UpdateProfile>}></Route>
+
+          <Route path='review' element={<AddReview></AddReview>}></Route>
+
+          <Route path='alluser' element={<RequireAdmin><AllUsers></AllUsers></RequireAdmin>}></Route>
+
+          <Route path='payment/:id' element={<Payment></Payment>}></Route> */}
+
+        {/* </Route> */}
 
         </Routes>
         <Footer></Footer>
